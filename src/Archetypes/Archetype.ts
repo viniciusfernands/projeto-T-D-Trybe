@@ -17,7 +17,9 @@ export default abstract class Archetype {
 
   get cost() { return this._cost; }
 
-  static createdRacesInstances(): number { throw new Error('Not implemented'); }
+  static createdArchetypeInstances(): number {
+    throw new Error('Not implemented');
+  }
 
   abstract get energyType(): EnergyType;
 }
