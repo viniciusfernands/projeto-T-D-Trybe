@@ -1,4 +1,4 @@
-import Race from './index';
+import Race from './Race';
 
 class Orc extends Race {
   private _maxLifePoints: number;
