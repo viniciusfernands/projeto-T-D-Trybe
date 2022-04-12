@@ -3,10 +3,10 @@ import { Attack, LifePoints, ReceiveDamage, Strength } from './Interfaces';
 
 interface Fighter
   extends
-  Attack<Fighter>,
-  ReceiveDamage, 
   LifePoints,
-  Strength {
+  Strength,
+  Attack<Fighter>,
+  ReceiveDamage {
   defense: number,
   energy?: Energy,
   special(enemy: Fighter): void,
