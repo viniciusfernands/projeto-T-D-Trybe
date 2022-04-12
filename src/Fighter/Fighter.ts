@@ -1,11 +1,12 @@
 import Energy from '../Energy';
 import { Attack, LifePoints, ReceiveDamage, Strength } from './Interfaces';
+import SimpleFighter from './SimpleFighter';
 
 interface Fighter
   extends
   LifePoints,
   Strength,
-  Attack<Fighter>,
+  Attack<SimpleFighter>,
   ReceiveDamage {
   defense: number,
   energy?: Energy,
